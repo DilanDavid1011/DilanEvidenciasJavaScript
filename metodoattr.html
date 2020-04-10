@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+
+    <script>
+            //$(document).ready(function(){
+                //$('#d').attr('class', function(){
+                  //  var p = "Hola Mundo";
+                    //return p;
+                //});
+                //var c =$('#d').attr('class');
+                //alert(c);
+            //});
+
+            $(document).ready(function(){
+                $('a').on("click",function(i){
+                    i.preventDefault();
+                    var l  = $(this).attr ('href');
+                    alert("Usted se dirigirá a otra pagina");
+                    location.href = l;
+                });
+            });
+
+    </script>
+</head>
+<body>
+    <div id="d" class="dc"></div>
+    <a href="https://www.facebook.com/DDBA11/">Entra a mi perfil de Facebook </a>
+    
+</body>
+</html>

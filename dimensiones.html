@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensiones</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            //console.log ($ ('header img').width(300))
+            //($('#i1').height(50));
+
+            var po = $('#i2 p').position();
+
+            var po2 = $('#i2 p').offset ();
+            console.log ('Posicion left: ' + po.left + ' Posicion top:  ' + po.top)
+            console.log ('Posicion left: ' + po2.left + ' Posicion top:  ' + po2.top)
+        });
+    </script>
+    <style>
+    
+        body,html
+        {
+            background: grey;
+            margin: 0;
+            padding: 0;
+
+        }
+        header
+        {
+            display: block;
+            margin: 0 auto;
+            width: 340px;
+        }
+        #i1,#i2
+        {
+            background: yellow;
+            display: block;
+            height: 100px;
+            margin: 20px auto;
+            width: 400px;
+        }
+        #i1
+        {
+            background: #FF0040;
+            height: 150PX;
+        }
+        #i2
+        {
+            padding: 15px;
+            border-radius: 60px 0 60px 0;
+        
+        }
+        p
+        {
+            margin-left: 10px;
+        }
+        img
+        {
+            height: 300px;
+            width: 300px;
+            margin-left: 15px;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+        <header>
+            <img src="img/img1.png" alt="">
+        </header>
+        <div id="i1"></div>
+        <div id="i2">
+            <p>Hola Mundo</p>
+        </div>
+</body>
+</html>

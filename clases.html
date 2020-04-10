@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
+
+
+    <style>
+        .test
+        {
+            background-color:rgb(255, 251, 0);
+        }
+    </style>
+
+    <script>
+        $(document).ready(function (){
+            $(document).click(function(){
+                $("#test").toggleClass("test");
+                if($("#test").hasClass("test"))
+                {
+                    $("#test").text("Estoy Bien")
+                }
+                else
+                {
+                    $("#test").text("Estoy Mal")
+                }
+            });
+        });
+
+    </script>
+</head>
+<body>
+        <div id='test'>Présioname</div>
+        
+</body>
+</html>
